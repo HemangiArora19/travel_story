@@ -1,0 +1,142 @@
+/* General styles for mobile-first approach */
+.h-screen {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #e0f7fa; /* Cyan-50 */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .login-ui-box {
+    display: none; /* Hides decorative elements on mobile */
+  }
+  
+  .bg-signup-bg-img {
+    background-image: url('your-signup-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Left-side box */
+  .w-[2/4] {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 50%; /* Restrict width on larger screens */
+  }
+  
+  .h-\[90vh\] {
+    height: 50vh; /* Reduce height on smaller screens */
+  }
+  
+  .p-10 {
+    padding: 1rem; /* Adjust padding for mobile */
+  }
+  
+  .text-5xl {
+    font-size: 1.75rem; /* Smaller font size on mobile */
+    line-height: 2rem; /* Adjust leading for smaller text */
+  }
+  
+  .text-\[15px\] {
+    font-size: 0.875rem; /* Slightly smaller text for mobile */
+    line-height: 1.25rem; /* Adjust line height */
+  }
+  
+  /* Right-side form box */
+  .h-\[75vh\] {
+    height: auto; /* Auto height for better responsiveness */
+    margin-top: 1.5rem; /* Add space between sections for mobile */
+  }
+  
+  .bg-white {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem; /* Reduce padding for mobile */
+    box-shadow: 0 10px 20px rgba(0, 200, 200, 0.2); /* Lighter shadow */
+  }
+  
+  /* Form styling */
+  .input-box {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    outline: none;
+  }
+  
+  .input-box:focus {
+    border-color: #06b6d4; /* Cyan focus border */
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #06b6d4; /* Cyan */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.375rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0284c7; /* Slightly darker cyan */
+  }
+  
+  .btn-light {
+    background-color: white;
+    color: #0284c7;
+    border: 1px solid #0284c7;
+  }
+  
+  .btn-light:hover {
+    background-color: #0284c7;
+    color: white;
+  }
+  
+  /* Responsive Breakpoints */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .login-ui-box {
+      display: block; /* Show decorative elements on larger screens */
+    }
+  
+    .w-2/4 {
+      width: 50%; /* Split screen for larger devices */
+    }
+  
+    .h-\[90vh\] {
+      height: 90vh; /* Restore height for larger screens */
+    }
+  
+    .h-\[75vh\] {
+      height: 75vh; /* Restore height for larger screens */
+    }
+  
+    .text-5xl {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  
+    .p-10 {
+      padding: 2.5rem; /* Restore padding for larger screens */
+    }
+  }
+  

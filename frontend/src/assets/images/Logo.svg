@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150">
+  <!-- Background is transparent -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="'Brush Script MT', cursive" font-size="72"
+        fill="url(#gradient)" stroke="#000" stroke-width="0.5">
+    Travel Story
+  </text>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #00cfff; stop-opacity: 1;" />
+      <stop offset="100%" style="stop-color: #007fff; stop-opacity: 1;" />
+    </linearGradient>
+  </defs>
+</svg>
