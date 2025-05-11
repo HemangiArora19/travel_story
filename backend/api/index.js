@@ -6,13 +6,13 @@ const app = express();
 const jwt = require("jsonwebtoken");
 
 const mongoose = require("mongoose");
-const User = require("./models/user.models");
-const { authenticateToken } = require("./utilities");
-const travel = require("./models/travelStory.model");
+const User = require("../models/user.models");
+const { authenticateToken } = require("../utilities");
+const travel = require("../models/travelStory.model");
 const fs= require("fs")
 const path= require("path")
 
-const upload= require("./multer");
+const upload= require("../multer");
 const { error } = require("console");
 // Middleware
 app.use(express.json());
