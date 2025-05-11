@@ -184,7 +184,7 @@ const handleDeleteStroryImg = async () => {
 const addNewTravelStory = async () => {
   try {
     let imgUrl = "";
-
+    const token = localStorage.getItem("token");
     if (storyImg) {
       // Upload the image if it exists
       const imgUpload = await uploadImage(storyImg);
