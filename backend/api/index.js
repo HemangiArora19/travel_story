@@ -369,5 +369,6 @@ app.listen(PORT, () => {
 });
 
 // Export for testing or further usage
-module.exports = app;
+
+module.exports.handler = serverless(app);
 
